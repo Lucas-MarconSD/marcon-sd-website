@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marcon SD | Manutenção Especializada</title>
+    
+    <!-- Google Fonts: Outfit (Títulos), Inter (Corpo) e JetBrains Mono (Terminal) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&family=Outfit:wght@500;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS (via CDN) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Configuração do Tailwind -->
+    <script src="tailwind.config.js"></script>
+
+    <!-- CSS Externo -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="antialiased font-sans bg-brand-bg text-white">
+    <script src="script.js" defer></script>
+    <!-- Navbar -->
+    <header class="relative z-50 border-b border-brand-border bg-brand-bg/80 backdrop-blur-md">
+        <div class="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <img src="logo.png" alt="Logo Marcon SD" class="h-8 w-8">
+                <span class="font-heading font-bold text-2xl tracking-tight">Marcon SD.</span>
+            </div>
+            
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-400">
+                <a href="#servicos" class="hover:text-brand-blue transition-colors">Serviços</a>
+                <a href="#sobre" class="hover:text-brand-blue transition-colors">Sobre Nós</a>
+                <a href="#diferenciais" class="hover:text-brand-blue transition-colors">Diferenciais</a>
+            </nav>
+
+            <a href="#orcamento" class="bg-brand-blue hover:bg-blue-600 text-white px-5 py-2.5 rounded-lg text-sm font-semibold transition-colors flex items-center gap-2">
+                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 00-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                WhatsApp
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative pt-20 pb-32 lg:pt-32 lg:pb-40 overflow-hidden">
+        <!-- Elementos de Fundo -->
+        <div class="bg-grid-animated"></div>
+        <div class="bg-glow"></div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            
+            <!-- Lado Esquerdo: Título e Textos -->
+            <div>
+                <h1 class="font-heading text-5xl md:text-6xl lg:text-7xl font-black leading-[1.1] mb-6">
+                    Seu Computador<br>voltando a<br><span class="text-brand-blue">funcionar.</span>
+                </h1>
+                <p class="text-slate-400 text-lg md:text-xl max-w-lg mb-10 leading-relaxed font-sans">
+                    Manutenção especializada em computadores e notebooks de todas as marcas. Orçamento gratuito e diagnóstico rápido para você não perder tempo.
+                </p>
+                <div class="flex flex-wrap items-center gap-4">
+                    <a href="#orcamento" class="bg-brand-blue hover:bg-blue-600 text-white px-8 py-4 rounded-xl font-bold transition-colors flex items-center gap-2">
+                        Solicitar orçamento grátis
+                    </a>
+                </div>
+            </div>
+
+            <!-- Lado Direito: Imagem do Terminal -->
+            <div class="relative w-full max-w-[480px] mx-auto lg:ml-auto animate-float">
+                
+                <!-- Selo "Grátis!" -->
+                <div class="absolute -top-4 -right-4 md:-top-6 md:-right-6 z-20 bg-brand-blue text-white px-5 py-2.5 rounded-xl shadow-lg flex flex-col items-center justify-center transform rotate-3">
+                    <span class="text-sm font-bold font-heading">Grátis!</span>
+                    <span class="text-xs font-medium opacity-90">Diagnóstico</span>
+                </div>
+
+                <!-- Caixa do Terminal -->
+                <div class="relative z-10 bg-[#0B0D17] border border-brand-border rounded-2xl shadow-2xl overflow-hidden flex flex-col font-mono">
+                    
+                    <!-- Barra de Título do Terminal -->
+                    <div class="flex items-center px-4 py-3 bg-[#06070F] border-b border-brand-border">
+                        <div class="flex gap-2 w-20">
+                            <div class="w-3 h-3 rounded-full bg-[#EF4444]"></div>
+                            <div class="w-3 h-3 rounded-full bg-[#F59E0B]"></div>
+                            <div class="w-3 h-3 rounded-full bg-[#10B981]"></div>
+                        </div>
+                        <div class="text-slate-500 text-xs font-medium flex-1 text-center pr-20">
+                            diagnóstico.exe
+                        </div>
+                    </div>
+
+                    <!-- Conteúdo do Terminal -->
+                    <div class="p-8 space-y-4 text-slate-300 text-sm md:text-base">
+                        <div class="flex gap-3">
+                            <span class="text-brand-blue font-bold">$</span>
+                            <span>iniciando diagnóstico...</span>
+                        </div>
+                        <div class="flex gap-3 items-start">
+                            <span class="text-[#10B981] font-bold">✓</span>
+                            <span>CPU: Intel Core i5 - OK</span>
+                        </div>
+                        <div class="flex gap-3 items-start">
+                            <span class="text-[#F59E0B] font-bold">!</span>
+                            <span>RAM: 8GB - Upgrade recomendado</span>
+                        </div>
+                        <div class="flex gap-3 items-start">
+                            <span class="text-[#EF4444] font-bold">X</span>
+                            <span>HD: Setores defeituosos detectados</span>
+                        </div>
+                        <div class="flex gap-3 items-start">
+                            <span class="text-[#10B981] font-bold">✓</span>
+                            <span>Antivírus: Limpo</span>
+                        </div>
+                        
+                        <div class="pt-4 pb-2 border-b border-brand-border/50"></div>
+                        
+                        <div class="flex gap-3 text-brand-blue font-bold">
+                            <span>→</span>
+                            <span>Orçamento: R$ 280,00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Selo "Problema Resolvido" -->
+                <div class="absolute -bottom-6 -left-4 md:-left-8 z-20 bg-[#0A0C16] border border-brand-border rounded-xl p-3 shadow-xl flex items-center gap-3">
+                    <div class="w-7 h-7 rounded-full border border-[#10B981]/30 bg-[#10B981]/10 flex items-center justify-center">
+                        <svg class="w-4 h-4 text-[#10B981]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path></svg>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="text-white text-sm font-bold font-heading">Problema resolvido</span>
+                        <span class="text-slate-400 text-xs font-sans">Entrega em ATÉ 24H</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Serviços -->
+    <section id="servicos" class="py-24 bg-[#080A12] border-t border-brand-border">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="mb-16">
+                <h2 class="font-heading text-3xl md:text-4xl font-bold text-white mb-4">Nossos Serviços</h2>
+                <p class="text-slate-400 text-lg max-w-2xl">Soluções completas para manter sua vida digital e seus negócios sempre rodando com máxima performance.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Serv 1 -->
+                <div class="service-card bg-brand-card p-8 rounded-2xl">
+                    <div class="w-12 h-12 bg-brand-blue/10 text-brand-blue rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                    </div>
+                    <h3 class="font-heading text-xl font-bold mb-3 text-white">Computadores Desktop</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Limpeza interna, troca de pasta térmica, upgrade de peças e montagem de setups de alta performance.</p>
+                </div>
+                <!-- Serv 2 -->
+                <div class="service-card bg-brand-card p-8 rounded-2xl">
+                    <div class="w-12 h-12 bg-brand-blue/10 text-brand-blue rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
+                    </div>
+                    <h3 class="font-heading text-xl font-bold mb-3 text-white">Notebooks</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Reparo de placa-mãe, troca de tela, teclado, bateria e otimização de refrigeração para evitar aquecimento.</p>
+                </div>
+                <!-- Serv 3 -->
+                <div class="service-card bg-brand-card p-8 rounded-2xl">
+                    <div class="w-12 h-12 bg-brand-blue/10 text-brand-blue rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                    </div>
+                    <h3 class="font-heading text-xl font-bold mb-3 text-white">Remoção de Vírus</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Limpeza profunda de malwares, spywares e instalação de proteção robusta para seus dados bancários.</p>
+                </div>
+                <!-- Serv 5 -->
+                <div class="service-card bg-brand-card p-8 rounded-2xl">
+                    <div class="w-12 h-12 bg-brand-blue/10 text-brand-blue rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.111 16.404a5.5 5.5 0 017.778 0M12 20h.01m-7.08-7.071c3.904-3.905 10.236-3.905 14.141 0M1.394 9.393c5.857-5.857 15.355-5.857 21.213 0"></path></svg>
+                    </div>
+                    <h3 class="font-heading text-xl font-bold mb-3 text-white">Redes e Wi-Fi</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Configuração de roteadores, repetidores, cabeamento estruturado e resolução de quedas de conexão.</p>
+                </div>
+                <!-- Serv 6 -->
+                <div class="service-card bg-brand-card p-8 rounded-2xl">
+                    <div class="w-12 h-12 bg-brand-blue/10 text-brand-blue rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12"></path></svg>
+                    </div>
+                    <h3 class="font-heading text-xl font-bold mb-3 text-white">Formatação e Otimização</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Instalação limpa do Windows/Linux, backup prévio dos dados e instalação dos pacotes de programas essenciais.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre e Marcas -->
+    <section id="sobre" class="py-24 bg-brand-bg relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div class="relative">
+                <img src="https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Técnico de Informática" class="rounded-2xl border border-brand-border grayscale-[30%] hover:grayscale-0 transition-all duration-500">
+                <div class="absolute inset-0 bg-brand-blue mix-blend-overlay opacity-20 rounded-2xl pointer-events-none"></div>
+            </div>
+            
+            <div>
+                <h2 class="font-heading text-3xl md:text-4xl font-bold text-white mb-6">Especialistas na máquina que move o seu dia</h2>
+                <p class="text-slate-400 mb-8 leading-relaxed font-sans">
+                    Nossa equipe é formada por profissionais apaixonados por tecnologia. Sabemos que ficar sem o computador é frustrante, por isso focamos em diagnósticos transparentes e soluções definitivas. Trabalhamos com laboratório próprio e peças originais.
+                </p>
+                
+                <h4 class="font-heading text-white font-bold mb-4">Marcas que atendemos:</h4>
+                <div class="flex flex-wrap gap-3">
+                    <span class="px-4 py-2 rounded bg-brand-card border border-brand-border text-sm font-semibold text-slate-300">Dell</span>
+                    <span class="px-4 py-2 rounded bg-brand-card border border-brand-border text-sm font-semibold text-slate-300">Lenovo</span>
+                    <span class="px-4 py-2 rounded bg-brand-card border border-brand-border text-sm font-semibold text-slate-300">HP</span>
+                    <span class="px-4 py-2 rounded bg-brand-card border border-brand-border text-sm font-semibold text-slate-300">Acer</span>
+                    <span class="px-4 py-2 rounded bg-brand-card border border-brand-border text-sm font-semibold text-slate-300">Apple</span>
+                    <span class="px-4 py-2 rounded bg-brand-card border border-brand-border text-sm font-semibold text-slate-300">Asus</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Diferenciais -->
+    <section id="diferenciais" class="py-20 bg-[#080A12] border-y border-brand-border">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Diferencial 1 -->
+                <div class="text-center p-6">
+                    <div class="w-14 h-14 bg-brand-blue/10 text-brand-blue rounded-full flex items-center justify-center mx-auto mb-4 border border-brand-blue/20">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    </div>
+                    <h4 class="font-heading font-bold text-white mb-2 text-lg">Atendimento Rápido</h4>
+                    <p class="text-slate-400 text-sm">Priorizamos a velocidade sem perder a precisão do diagnóstico.</p>
+                </div>
+                <!-- Diferencial 2 -->
+                <div class="text-center p-6">
+                    <div class="w-14 h-14 bg-brand-blue/10 text-brand-blue rounded-full flex items-center justify-center mx-auto mb-4 border border-brand-blue/20">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path></svg>
+                    </div>
+                    <h4 class="font-heading font-bold text-white mb-2 text-lg">Garantia em Serviços</h4>
+                    <p class="text-slate-400 text-sm">Garantia de serviço de qualidade.</p>
+                </div>
+                <!-- Diferencial 3 -->
+                <div class="text-center p-6">
+                    <div class="w-14 h-14 bg-brand-blue/10 text-brand-blue rounded-full flex items-center justify-center mx-auto mb-4 border border-brand-blue/20">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
+                    </div>
+                    <h4 class="font-heading font-bold text-white mb-2 text-lg">Orçamento Grátis</h4>
+                    <p class="text-slate-400 text-sm">Sem surpresas. Avaliamos seu equipamento sem custo inicial.</p>
+                </div>
+                <!-- Diferencial 4 -->
+                <div class="text-center p-6">
+                    <div class="w-14 h-14 bg-brand-blue/10 text-brand-blue rounded-full flex items-center justify-center mx-auto mb-4 border border-brand-blue/20">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                    </div>
+                    <h4 class="font-heading font-bold text-white mb-2 text-lg">Técnicos Certificados</h4>
+                    <p class="text-slate-400 text-sm">Laboratório equipado e profissionais com formação técnica atualizada.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulário de Orçamento / CTA -->
+    <section id="orcamento" class="py-24 bg-brand-bg relative">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="bg-brand-card border border-brand-border rounded-3xl p-8 md:p-12 shadow-2xl relative overflow-hidden">
+                
+                <!-- Glow sutil dentro do card -->
+                <div class="absolute top-0 right-0 w-64 h-64 bg-brand-blue opacity-10 rounded-full mix-blend-screen filter blur-[60px] pointer-events-none"></div>
+
+                <div class="text-center mb-10 relative z-10">
+                    <h2 class="font-heading text-3xl md:text-4xl font-bold text-white mb-3">Precisando de ajuda agora?</h2>
+                    <p class="text-slate-400 font-sans">Preencha os dados abaixo e entraremos em contato rapidamente pelo WhatsApp.</p>
+                </div>
+
+                <form id="orcamento-form" class="space-y-6 relative z-10 font-sans">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="space-y-2">
+                            <label class="text-sm font-medium text-slate-300">Seu Nome</label>
+                            <input id="form-nome" type="text" class="w-full bg-[#06070F] border border-brand-border rounded-xl px-4 py-3 text-white focus:outline-none focus:border-brand-blue transition-colors" placeholder="Ex: Carlos Silva" required>
+                        </div>
+                        <div class="space-y-2">
+                            <label class="text-sm font-medium text-slate-300">WhatsApp</label>
+                            <input id="form-whatsapp" type="tel" class="w-full bg-[#06070F] border border-brand-border rounded-xl px-4 py-3 text-white focus:outline-none focus:border-brand-blue transition-colors" placeholder="(21) 9 0000-0000" required>
+                        </div>
+                    </div>
+
+                    <div class="space-y-2">
+                        <label class="text-sm font-medium text-slate-300">Qual é o serviço principal?</label>
+                        <select id="form-servico" class="w-full bg-[#06070F] border border-brand-border rounded-xl px-4 py-3 text-slate-300 focus:outline-none focus:border-brand-blue transition-colors appearance-none" required>
+                            <option value="">Selecione uma opção...</option>
+                            <option value="computador">Manutenção em Computador de Mesa</option>
+                            <option value="notebook">Manutenção em Notebook</option>
+                            <option value="virus">Remoção de Vírus / Lentidão</option>
+                            <option value="formatacao">Formatação do Sistema</option>
+                            <option value="outro">Outro problema (descrever abaixo)</option>
+                        </select>
+                    </div>
+
+                    <div class="space-y-2">
+                        <label class="text-sm font-medium text-slate-300">Descreva o problema brevemente</label>
+                        <textarea id="form-descricao" rows="3" class="w-full bg-[#06070F] border border-brand-border rounded-xl px-4 py-3 text-white focus:outline-none focus:border-brand-blue transition-colors resize-none" placeholder="Ex: Meu notebook liga, mas a tela fica preta..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="w-full bg-brand-blue hover:bg-blue-600 text-white font-bold py-4 rounded-xl transition-colors flex justify-center items-center gap-2">
+                        Enviar para Análise
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#05060A] border-t border-brand-border py-12">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8 items-center text-center md:text-left font-sans">
+            <div>
+                <span class="font-heading font-bold text-2xl text-white tracking-tight">Marcon SD.</span>
+                <p class="text-slate-500 text-sm mt-3">Sua tecnologia em boas mãos.</p>
+            </div>
+            
+            <div class="text-slate-400 text-sm">
+                <p class="font-bold text-white mb-2">Horário de Funcionamento</p>
+                <p>Segunda a Sexta: 08:00 às 18:00</p>
+                <p>Sábado: 09:00 às 13:00</p>
+            </div>
+
+            <div class="flex justify-center md:justify-end gap-4">
+                <p class="text-slate-500 text-sm">© 2024 Marcon Serviços Digitais. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
